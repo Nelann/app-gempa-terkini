@@ -52,14 +52,18 @@ def ekstrasi_data():
             i += 1
 
 
-        result = dict()
-        result['tanggal'] = tanggal
-        result['waktu'] = waktu
-        result['magnitudo'] = magnitudo
-        result['kedalaman'] = kedalaman
-        result['koordinat'] = {'ls': ls, 'bt': bt}
-        result['lokasi'] = lokasi
-        result['dirasakan'] = dirasakan
+        result = {
+            'tanggal': tanggal,
+            'waktu': waktu,
+            'magnitudo': magnitudo,
+            'kedalaman': kedalaman,
+            'koordinat': {
+                'ls': ls,
+                'bt': bt,
+            },
+            'lokasi': lokasi,
+            'dirasakan': dirasakan
+        }
 
         return result
 
